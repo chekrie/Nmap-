@@ -47,3 +47,6 @@ Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-22 02:38 EDT
 Nmap scan report for 172.20.10.3
 Host is up (0.0042s latency).
 Nmap done: 1 IP address (1 host up) scanned in 0.17 seconds
+
+I explored network reconnaissance and security analysis using Nmap. I began by installing and configuring the tool, then performed TCP SYN scans across my local network to identify active hosts and open ports. I documented the results, researched the common services associated with those ports, and analyzed potential security risks that could arise from exposed services
+and what am trying to scan entire network its taking long time instead of that i have tries others scan
