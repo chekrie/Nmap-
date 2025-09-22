@@ -19,7 +19,6 @@ Nmap done: 1 IP address (1 host up) scanned in 6.01 seconds
 
 ┌──(kali㉿kali)-[~]
 └─$ nmap -sU 172.20.10.3
-
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-22 02:27 EDT
 Stats: 0:05:58 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
 UDP Scan Timing: About 66.15% done; ETC: 02:36 (0:03:03 remaining)
