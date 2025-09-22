@@ -47,5 +47,35 @@ Nmap scan report for 172.20.10.3
 Host is up (0.0042s latency).
 Nmap done: 1 IP address (1 host up) scanned in 0.17 seconds
 
+┌──(kali㉿kali)-[~]
+└─$ nmap -A -p 0-100 172.20.10.3
+
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-22 03:06 EDT
+Nmap scan report for 172.20.10.3
+Host is up (0.0015s latency).
+Not shown: 99 filtered tcp ports (no-response), 1 filtered tcp ports (net-unreach)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Site doesn't have a title.
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: bridge|VoIP adapter|general purpose
+Running (JUST GUESSING): Oracle Virtualbox (98%), Slirp (98%), AT&T embedded (95%), QEMU (94%)
+OS CPE: cpe:/o:oracle:virtualbox cpe:/a:danny_gasparovski:slirp cpe:/a:qemu:qemu
+Aggressive OS guesses: Oracle Virtualbox Slirp NAT bridge (98%), AT&T BGW210 voice gateway (95%), QEMU user mode network gateway (94%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   4.59 ms 172.20.10.3
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.97 seconds
+                                                                   
+
 I explored network reconnaissance and security analysis using Nmap. I began by installing and configuring the tool, then performed TCP SYN scans across my local network to identify active hosts and open ports. I documented the results, researched the common services associated with those ports, and analyzed potential security risks that could arise from exposed services
 and what am trying to scan entire network its taking long time instead of that i have tries others scan
